@@ -1,0 +1,49 @@
+{
+  "name": "handle-http-error",
+  "version": "0.0.0",
+  "description": "Handle a few common cases when an HTTP request got an error.",
+  "author": {
+    "name": "Wiredcraft",
+    "email": "info@wiredcraft.com",
+    "url": "http://wiredcraft.com"
+  },
+  "contributors": [
+    "Makara Wang"
+  ],
+  "keywords": [
+    "Handle",
+    "HTTP",
+    "Error",
+    "Request",
+    "Handler"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wiredcraft/handle-http-error"
+  },
+  "bugs": {
+    "url": "https://github.com/Wiredcraft/handle-http-error/issues"
+  },
+  "homepage": "https://github.com/Wiredcraft/handle-http-error",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "http-errors": "^1.5.0",
+    "not-empty-object": "^1.0.0",
+    "sliced": "^1.0.1"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "coveralls": "^2.11.12",
+    "istanbul": "^0.4.4",
+    "jscs": "^3.0.7",
+    "mocha": "^3.0.2",
+    "nock": "^9.0.2",
+    "request": "^2.76.0",
+    "request-promise": "^4.1.1",
+    "should": "^11.0.0"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}
