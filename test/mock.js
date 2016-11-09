@@ -8,6 +8,13 @@ function mock(host, options) {
 
   return nock(host, options)
 
+  // Non-errors.
+  .get('/200')
+    .reply(200, { data: { id: 200 } })
+
+  .get('/error')
+    .replyWithError('Application Error')
+
   // Get. Typical errors: 404, 500.
   .get('/null/404')
     .reply(404)

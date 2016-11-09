@@ -29,6 +29,22 @@ describe('Handle error response', () => {
       handler.should.be.Function();
     });
 
+    it('would not handle non-error', () => {
+      return request.get(`${host}/200`).catch(handler).then((body) => {
+        body.should.deepEqual({ data: { id: 200 } });
+      });
+    });
+
+    it('would not handle non-http-error', () => {
+      return request.get(`${host}/error`).catch(handler).then(() => {
+        throw new Error('expected an error');
+      }, (err) => {
+        err.should.be.Error();
+        err.should.not.have.property('statusCode');
+        err.should.have.property('message', 'Error: Application Error');
+      });
+    });
+
     it('can handle null message', () => {
       return request.get(`${host}/null/404`).catch(handler).then(() => {
         throw new Error('expected an error');
