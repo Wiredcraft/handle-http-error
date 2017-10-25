@@ -27,21 +27,22 @@
   },
   "homepage": "https://github.com/Wiredcraft/handle-http-error",
   "dependencies": {
-    "debug": "^2.5.2",
-    "http-errors": "^1.5.1",
+    "debug": "^3.1.0",
+    "http-errors": "^1.6.2",
     "not-empty-object": "^1.0.0",
     "sliced": "^1.0.1"
   },
   "devDependencies": {
-    "bluebird": "^3.4.7",
-    "coveralls": "^2.11.15",
+    "bluebird": "^3.5.1",
+    "coveralls": "^3.0.0",
+    "isomorphic-fetch": "^2.2.1",
     "istanbul": "^0.4.4",
     "jscs": "^3.0.7",
-    "mocha": "^3.2.0",
-    "nock": "^9.0.2",
-    "request": "^2.79.0",
-    "request-promise": "^4.1.1",
-    "should": "^11.1.2"
+    "mocha": "^4.0.1",
+    "nock": "^9.0.25",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "should": "^13.1.2"
   },
   "scripts": {
     "test": "make test"
