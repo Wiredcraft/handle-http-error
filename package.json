@@ -1,6 +1,6 @@
 {
   "name": "handle-http-error",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Handle a few common cases when an HTTP request got an error.",
   "author": {
     "name": "Wiredcraft",
